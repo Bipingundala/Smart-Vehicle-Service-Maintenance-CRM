@@ -41,7 +41,9 @@ Use Cases
 ->Monthly revenue per service center.
 ->Inventory usage & trends.
 
-This project was implemented from scratch in Salesforce with the following
+This project was implemented from scratch in Salesforce with the following 
+
+
 1.Custom Objects Created:
   Vehicle__c → Stores customer vehicle details.
   Service_Request__c → Tracks service bookings and status.
@@ -50,30 +52,36 @@ This project was implemented from scratch in Salesforce with the following
   Service_Parts_Used__c → Logs parts consumed during service.
   Invoice__c → Handles billing and payments.
 
+
 2.Page Layouts & Fields Configured:
   Custom fields (Date, Lookup, Picklist, Currency, etc.) created for each object.
   Page layouts customized for Technician, Service Request, Vehicle, Parts Inventory, Invoice.
+
 
 3.Profiles Created:
   Service Manager Profile → Read/Write on all service-related objects.
   Technician Profile → Read/Write only on assigned requests, update status & parts used.
   Customer Service Agent (CSA) Profile → Can create service requests, view status, and manage customer communication.
 
+
 4.Roles Created:
   Service Manager
   Technician (reports to Service Manager)
   Customer Service Agent (reports to Service Manager)
+
 
 5.Users Configured:
   Service Manager → Role: Service Manager | Profile: Service Manager Profile
   Technician → Role: Technician | Profile: Technician Profile
   Customer Service Agent (CSA) → Role: Customer Service Agent | Profile: CSA Profile (cloned under Platform User license)
 
+
 6.Sharing Rules & Security:
   Org-Wide Defaults (OWD):
   Vehicle, Service Request, Invoice → Private
   Parts Inventory → Public Read Only
   Sharing Rule: Service Manager-owned Service Requests → Shared with Technicians (Read/Write)
+
 
 7.Metadata Retrieved & Source Control:
   Retrieved objects, profiles, layouts, and sharing rules into VS Code using Salesforce CLI.
