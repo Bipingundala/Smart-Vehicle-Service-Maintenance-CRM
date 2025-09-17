@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <!-- All your custom objects -->
+        <members>Vehicle__c</members>
+        <members>Technician__c</members>
+        <members>Parts_Inventory__c</members>
+        <members>Service_Request__c</members>
+        <members>Invoice__c</members>
+        <members>Service_Parts_Used__c</members>
+        <name>CustomObject</name>
+    </types>
+
+    <types>
+        <!-- Layouts -->
+        <members>Vehicle__c-Vehicle Layout</members>
+        <members>Technician__c-Technician Layout</members>
+        <members>Parts_Inventory__c-Parts Inventory Layout</members>
+        <members>Service_Request__c-Service Request Layout</members>
+        <members>Invoice__c-Invoice Layout</members>
+        <members>Service_Parts_Used__c-Service Parts Used Layout</members>
+        <name>Layout</name>
+    </types>
+
+    <types>
+        <!-- Custom Profiles -->
+        <members>Service Manager Profile</members>
+        <members>Technician Profile</members>
+        <members>Customer Service Agent Profile</members>
+        <name>Profile</name>
+    </types>
+
+    <types>
+    <members>Service_Request__c</members>
+    <name>SharingRules</name>
+    </types>
+
+
+
+
+    <version>61.0</version>
+</Package>

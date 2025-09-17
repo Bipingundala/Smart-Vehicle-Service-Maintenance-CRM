@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Service_Manager_Technician_SR_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Service Manager → Technician SR Sharing</label>
+        <sharedTo>
+            <role>Technician</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Service_Manager</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>
