@@ -81,7 +81,57 @@ This project was implemented from scratch in Salesforce with the following
   Vehicle, Service Request, Invoice → Private
   Parts Inventory → Public Read Only
   Sharing Rule: Service Manager-owned Service Requests → Shared with Technicians (Read/Write)
+7.Validation Rules
+    ->Vehicle Must Be Linked to Service Request
+      Object: Service_Request__c
+      Validation Rule: ISBLANK(Vehicle__c)
+      Error Message: Vehicle must be selected for a service request
+    ->Invoice Amount Must Be Greater Than Zero
+      Object: Invoice__c
+      Validation Rule: Amount__c <= 0
+      Error Message: Invoice amount must be greater than zero
+8.Auto-Assign Technician Flow
 
+  Flow Type: Record-Triggered Flow
+  Object: Service_Request__c
+  Trigger Condition: Record created, Assigned Technician is null
+  Get Records: Technician__c where Availability = 'Available' (first record only)
+  Update Records: Assign Technician__c from Get Records to Service Request
+  Email Alert: Notify customer of technician assignment
+  Flow Activation: Saved and activated
+
+9.Approval Process (Invoices > ₹10,000)
+
+Object: Invoice__c
+
+Approval Process Name: Invoice_Approval_Process
+
+Entry Criteria: Amount__c > 10000
+
+Approver: Role → Service Manager
+
+Approval Steps:
+
+Initial Submission → Service Manager approval
+
+Approved → Status = Approved
+
+Rejected → Status = Draft
+
+Process Activation: Activated
+
+4D: Email Alerts / Notifications
+    ->On Service Request Creation
+      Object: Service_Request__c
+      Email Template: Service Request Confirmation
+      Recipient: Customer (lookup field)
+
+   -> Trigger: Record-Triggered Flow (when Service Request is created)
+      On Status Change
+      Object: Service_Request__c
+      Email Template: Status Change Notification
+      Recipient: Customer
+      Trigger: Record update, when Status__c changes
 
 7.Metadata Retrieved & Source Control:
   Retrieved objects, profiles, layouts, and sharing rules into VS Code using Salesforce CLI.
