@@ -1,0 +1,90 @@
+Phase 1: Problem Understanding & Industry Analysis
+Project: Smart Vehicle Service & Maintenance CRM
+Industry: Automobile / Vehicle Service
+Type: B2C & B2B CRM Implementation
+
+1. Requirement Gathering
+Goal: Identify functional and non-functional requirements for the CRM.
+    - Customer Requirements
+        ? Easy online service booking.
+        ? Real-time updates on service progress.
+        ? Service history tracking.
+        ? Digital invoices and online payments.
+    - Service Manager Requirements
+        ? Centralized dashboard for monitoring service center operations.
+        ? Technician workload distribution.
+        ? Inventory tracking and reorder alerts.
+        ? Reports on revenue, turnaround time, and technician performance.
+    - Technician Requirements
+        ? Dashboard with assigned service jobs.
+        ? Ability to update service status.
+        ? Access to vehicle service history.
+        ? Easy logging of parts used.
+    - Business/Management Requirements
+        ? Revenue and performance dashboards.
+        ? Preventive maintenance reminders for customer retention.
+        ? Streamlined approvals for high-value services (>?10,000).
+        ? Integration with SMS/email for communication.
+
+2. Stakeholder Analysis
+Primary Stakeholders:
+    - Customers (vehicle owners) ? Use CRM for booking & tracking.
+    - Technicians ? Execute services, update jobs, track parts used.
+    - Service Managers ? Allocate work, monitor operations, approve invoices.
+    - Inventory Managers ? Manage stock, receive alerts for low inventory.
+    - Senior Management ? Review performance KPIs, revenue, customer satisfaction.
+Secondary Stakeholders:
+    - Payment Gateway Providers ? Enable online transactions.
+    - SMS/Email API Vendors ? Handle communication.
+    - Salesforce Admins/Developers ? Configure & maintain CRM.
+
+3. Business Process Mapping (Current vs. Proposed)
+Current (Manual & Inefficient):
+    - Service requests captured manually or via phone.
+    - Technician allocation done on paper/Excel.
+    - Inventory tracked in spreadsheets.
+    - Customers lack visibility into progress.
+    - No preventive reminders, leading to lost business.
+Proposed (Salesforce CRM-enabled):
+    - Service requests booked via portal or call center ? auto-captured in CRM.
+    - Automated technician assignment based on skills/workload.
+    - Parts usage auto-updates inventory; reorder alerts triggered.
+    - Customers notified via SMS/email at each stage.
+    - Preventive maintenance reminders sent automatically.
+    - Dashboards give managers visibility into revenue, workload, and KPIs.
+
+4. Industry-specific Use Case Analysis
+    - Automobile Industry Trends:
+        ? Increasing demand for digital-first service experiences.
+        ? Preventive maintenance as a customer retention strategy.
+        ? Integration of CRM with IoT/connected vehicles for predictive servicing (future scope).
+        ? Need for multi-branch service center performance tracking.
+    - Relevant Use Cases:
+        ? Service Request Management.
+        ? Vehicle History Tracking.
+        ? Technician & Workload Management.
+        ? Parts & Inventory Management.
+        ? Preventive Maintenance Reminders.
+        ? Invoice & Payment Handling.
+        ? Customer Communication.
+        ? Reporting & Dashboards.
+
+5. AppExchange Exploration
+Explore Salesforce AppExchange for pre-built apps & accelerators relevant to Vehicle Service:
+    - Service & Field Service Apps:
+        ? Salesforce Field Service Lightning - for scheduling & dispatching technicians.
+        ? Auto Dealer CRM - tailored to automotive service management.
+    - Inventory Management Apps:
+        ? Asset & Inventory Management apps to track parts and stock.
+    - Communication & Notification Apps:
+        ? Twilio SMS Integration for real-time updates.
+        ? Email-to-Case Extensions for customer communications.
+    - Payment Apps:
+        ? Stripe or PayPal Integrations for invoice payments.
+These can be leveraged to accelerate implementation rather than building everything custom.
+
+Outcome of Phase 1:
+    - Clear understanding of industry pain points and digital transformation needs.
+    - Documented requirements from all stakeholders.
+    - Business processes mapped (manual ? automated).
+    - Industry best practices and relevant AppExchange tools identified.
