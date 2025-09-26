@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Low_Stock_Alert</name>
+    <style>none</style>
+    <subject>Low Inventory Alert: {!Parts_Inventory__c.Part_Number__c}</subject>
+    <textOnly>Alert: The stock for {!Parts_Inventory__c.Part_Number__c} has fallen below the reorder level. 
+Current Stock: {!Parts_Inventory__c.Stock__c} 
+Reorder Level: {!Parts_Inventory__c.Reorder_Level__c}
+Please take necessary action to replenish the inventory.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

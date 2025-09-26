@@ -1,0 +1,12 @@
+Hello {!Service_Request__c.Customer__r.Name},
+
+The status of your Service Request {!Service_Request__c.Name} has changed.
+
+Current Status: {!Service_Request__c.Status__c}
+Service Date: {!Service_Request__c.Service_Date__c}
+Assigned Technician: {!Service_Request__c.Technician__r.Name}
+
+Thank you for using our Smart Vehicle Service & Maintenance CRM.
+
+Best Regards,
+Smart Vehicle Service Team

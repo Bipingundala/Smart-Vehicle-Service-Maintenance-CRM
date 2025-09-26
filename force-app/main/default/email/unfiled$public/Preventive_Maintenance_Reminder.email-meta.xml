@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Preventive Maintenance Reminder</name>
+    <style>none</style>
+    <subject>Reminder: Time for Your Vehicle’s Preventive Maintenance</subject>
+    <textOnly>Hello {!Contact.Name},
+
+It’s time for your vehicle {!Vehicle__c.Name} (Reg. No: {!Vehicle__c.Registration_Number__c}) to undergo preventive maintenance.
+
+Regular servicing keeps your vehicle running smoothly and helps prevent costly repairs.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

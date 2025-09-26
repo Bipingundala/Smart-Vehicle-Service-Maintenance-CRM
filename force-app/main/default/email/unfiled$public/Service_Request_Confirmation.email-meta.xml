@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Confirmation email sent to customer upon service request creation</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Service_Request_Confirmation</name>
+    <style>none</style>
+    <subject>Your Service Request has been successfully created</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,5 @@
+Hello {!Contact.Name},
+
+It’s time for your vehicle {!Vehicle__c.Name} (Reg. No: {!Vehicle__c.Registration_Number__c}) to undergo preventive maintenance.
+
+Regular servicing keeps your vehicle running smoothly and helps prevent costly repairs.

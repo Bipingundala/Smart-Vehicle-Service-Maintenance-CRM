@@ -1,0 +1,12 @@
+Hello {!User.Name},  
+
+A new Invoice requires your approval.  
+
+Invoice Number: {!Invoice__c.Name}  
+Amount: {!Invoice__c.Amount__c}  
+Customer: {!Invoice__c.Service_Request__c.Customer__c}  
+
+Please log in to Salesforce to review and approve.  
+
+Thanks,  
+Smart Vehicle CRM System

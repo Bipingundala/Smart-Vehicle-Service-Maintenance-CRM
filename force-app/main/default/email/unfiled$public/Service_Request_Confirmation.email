@@ -1,0 +1,11 @@
+Dear {!Service_Request__c.Customer__r.Name},
+
+Your service request {!Service_Request__c.Name} has been successfully created.
+
+Service Date: {!Service_Request__c.Service_Date__c}
+Vehicle: {!Service_Request__c.Vehicle__c}
+Assigned Technician: {!Service_Request__c.Technician__c}
+
+Thank you for choosing our services!
+Best regards,
+Your Smart Vehicle Service Team

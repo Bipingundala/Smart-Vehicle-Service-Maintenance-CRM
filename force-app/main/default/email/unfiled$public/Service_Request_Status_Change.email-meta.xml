@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notification sent to customer when Service Request status changes</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Service_Request_Status_Change</name>
+    <style>none</style>
+    <subject>Update on Your Service Request {!Service_Request__c.Name}</subject>
+    <textOnly>Hello {!Service_Request__c.Customer__r.Name},
+
+The status of your Service Request {!Service_Request__c.Name} has changed.
+
+Current Status: {!Service_Request__c.Status__c}
+Service Date: {!Service_Request__c.Service_Date__c}
+Assigned Technician: {!Service_Request__c.Technician__r.Name}
+
+Thank you for using our Smart Vehicle Service &amp; Maintenance CRM.
+
+Best Regards,
+Smart Vehicle Service Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>
