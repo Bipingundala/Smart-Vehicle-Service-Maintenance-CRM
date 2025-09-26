@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
+
+    <!-- Custom Objects -->
     <types>
-        <!-- All your custom objects -->
         <members>Vehicle__c</members>
         <members>Technician__c</members>
         <members>Parts_Inventory__c</members>
@@ -11,8 +12,8 @@
         <name>CustomObject</name>
     </types>
 
+    <!-- Layouts -->
     <types>
-        <!-- Layouts -->
         <members>Vehicle__c-Vehicle Layout</members>
         <members>Technician__c-Technician Layout</members>
         <members>Parts_Inventory__c-Parts Inventory Layout</members>
@@ -22,21 +23,54 @@
         <name>Layout</name>
     </types>
 
+    <!-- Custom Profiles -->
     <types>
-        <!-- Custom Profiles -->
         <members>Service Manager Profile</members>
         <members>Technician Profile</members>
         <members>Customer Service Agent Profile</members>
         <name>Profile</name>
     </types>
 
-    <types>
+    <!-- Sharing Rules -->
+   <types>
     <members>Service_Request__c</members>
     <name>SharingRules</name>
     </types>
 
+    <!-- Email Templates -->
+   <types>
+    <members>unfiled$public/Service_Request_Confirmation</members>
+    <members>unfiled$public/Service_Request_Status_Change</members>
+    <members>unfiled$public/Invoice_Approval_Request</members>
+    <members>unfiled$public/Preventive_Maintenance_Reminder</members>
+    <members>unfiled$public/Low_Stock_Alert</members>
+    <name>EmailTemplate</name>
+    </types>
 
 
+    <!-- Flows -->
+    <types>
+        <members>Auto_Assign_Technician</members>
+        <members>Service_Request_Status_Change_Email</members>
+        <members>Preventive_Maintenance_Reminder_Flow</members>
+        <members>Low_Stock_Alert_Flow</members>
+        <members>Invoice_Approval_Process</members>
+        <name>Flow</name>
+    </types>
+
+    <!-- Approval Processes -->
+   <types>
+    <members>Invoice__c.Invoice_Approval_Process</members>
+    <name>ApprovalProcess</name>
+    </types>
+
+
+    <!-- Validation Rules -->
+    <types>
+        <members>Service_Request__c.Vehicle_Required</members>
+        <members>Invoice__c.Amount_Positive</members>
+        <name>ValidationRule</name>
+    </types>
 
     <version>61.0</version>
 </Package>
