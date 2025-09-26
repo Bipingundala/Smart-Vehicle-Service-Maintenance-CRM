@@ -1,7 +1,7 @@
 Phase 1: Problem Understanding & Industry Analysis
 Project: Smart Vehicle Service & Maintenance CRM
 Industry: Automobile / Vehicle Service
-Type: B2C & B2B CRM Implementation
+Type: B2C & B2B CRM Implementation Project
 
 1. Requirement Gathering
 Goal: Identify functional and non-functional requirements for the CRM.
